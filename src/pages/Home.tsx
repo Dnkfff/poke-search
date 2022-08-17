@@ -1,6 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
+import { PokemonsResponseResults } from "../@types/api";
 //import { useEffect } from "react";
 import { pokemonApi } from "../api";
+import PokemonCard from "../components/PokemonCard";
 
 const Home: React.FC<{}> = () => {
 
@@ -20,9 +22,11 @@ const Home: React.FC<{}> = () => {
         <div>
             <h1>Home</h1>
 
-            {pokemons.data?.data.results.map((pokemon:any) => (
-                <div>{pokemon.name}</div>
-            ))}
+            <div className="grid grid-cols-4 gap-8">
+                {pokemons.data?.data.results.map((pokemon: PokemonsResponseResults) => (
+                   <PokemonCard name={pokemon.name} />
+                ))}
+            </div>
         </div>
     );
 }
