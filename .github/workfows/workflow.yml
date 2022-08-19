@@ -1,0 +1,12 @@
+name: React CI
+
+on: 
+  push:
+    branches:
+     -"main"
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [15.x, 16.x, 17.x, 18.x ]
