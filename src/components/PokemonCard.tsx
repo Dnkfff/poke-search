@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import React from 'react';
 
-import useFindPokemon from "../hooks/find-pokemon";
-import Loader from "./Loader";
+import useFindPokemon from '../hooks/find-pokemon';
+import Loader from './Loader';
 
 type PokemonCardProps = {
   name: string;
@@ -13,7 +14,7 @@ const PokemonCard: React.FC<PokemonCardProps> = ({ name, showStats }) => {
 
   if (pokemon.isLoading) {
     return (
-      <div className="w-full h-96 bg-gray-50 border border-gray-100 rounded-lg p-4 flex justify-center items-center">
+      <div className='w-full h-96 bg-gray-50 border border-gray-100 rounded-lg p-4 flex justify-center items-center'>
         <Loader />
       </div>
     );
@@ -24,11 +25,11 @@ const PokemonCard: React.FC<PokemonCardProps> = ({ name, showStats }) => {
   return (
     <Link
       to={`/${name}`}
-      className="group block w-full bg-gray-50 border border-gray-100 rounded-lg p-4 transition transform space-y-8 hover:shadow hover:scale-105"
+      className = 'group block w-full bg-gray-50 border border-gray-100 rounded-lg p-4 transition transform space-y-8 hover:shadow hover:scale-105'
     >
-      <div className="w-full h-56 flex justify-center">
+      <div className='w-full h-56 flex justify-center'>
         <img
-          className="w-full h-full object-contain"
+          className='w-full h-full object-contain'
           src={
             otherSprites?.dream_world.front_default ||
             otherSprites?.["official-artwork"].front_default
@@ -36,8 +37,10 @@ const PokemonCard: React.FC<PokemonCardProps> = ({ name, showStats }) => {
           alt={pokemon.data?.data.name}
         />
       </div>
-      <div className="font-medium capitalize text-xl text-gray-500 transition group-hover:text-gray-700">
-        {pokemon.data?.data.name}
+      <div 
+      className =
+       "font-medium capitalize text-xl text-gray-500 transition group-hover:text-gray-700">
+      {pokemon.data?.data.name}
       </div>
 
       {showStats && (
@@ -50,7 +53,7 @@ const PokemonCard: React.FC<PokemonCardProps> = ({ name, showStats }) => {
                 <div className="flex items-center">
                   <div className="w-full bg-gray-200 h-3">
                     <div
-                      style={{ width: `${Math.min(100, stat.base_stat)}%` }}
+                      style={{ width: '100%' }}
                       className="h-full bg-yellow-400"
                     ></div>
                   </div>

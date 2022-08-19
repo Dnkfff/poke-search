@@ -1,5 +1,6 @@
 import InView from "react-intersection-observer";
 import { PokemonsResponseResult } from "../@types/api";
+import  React from 'react';
 
 import { useApp } from "../states/AppState";
 import PokemonCard from "../components/PokemonCard";
