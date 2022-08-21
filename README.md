@@ -4,5 +4,5 @@ Pokemon search react TypeScript app using TypeScript, scss, Tailwind (quite same
 
 `https://pokeapi.co/`
 
-## You can visit it down here
-[Link](http://poke-search-react-app.s3-website-us-west-1.amazonaws.com/)
+## You can visit it down here [Link](http://poke-search-react-app.s3-website-us-west-1.amazonaws.com/)
+`http://poke-search-react-app.s3-website-us-west-1.amazonaws.com/`
