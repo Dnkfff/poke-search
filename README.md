@@ -6,6 +6,6 @@ Pokemon search react TypeScript app using TypeScript, scss, Tailwind (quite same
 
 # How to use?
 Simply clone the repo and use 
-`npm install`
-`npm run start`
-`npm run test` - if necessary
+### `npm install`
+### `npm start`
+### `npm run test` - if necessary
