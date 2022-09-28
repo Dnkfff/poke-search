@@ -30,7 +30,6 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "client-s3-deploy": "aws s3 sync build/ s3://pokemon-search-react-app --profile dncop",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
