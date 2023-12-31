@@ -1,11 +1,12 @@
 # PokeSearch app using pokeapi
 `https://pokeapi.co/`
 
-Pokemon search react TypeScript app using TypeScript, scss, Tailwind (quite same as bootstrap)
+Pokemon search React app using TypeScript, scss, Tailwind
 
 
 # How to use?
-Simply clone the repo and use 
+Clone 
 ### `npm install`
+### `yarn`
 ### `npm start`
 ### `npm run test` - if necessary
